@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>I'm in a React app!</title>
+  </head>
+  <body>
+    <div id="react-app"></div>
+
+    <!--
+    <script src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react.js"></script>
+    <script src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react-dom.js"></script>
+    -->
+    <!--
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script>
+      let rootElement = React.createElement('div', {},
+        React.createElement('h1', {}, "Contacts"),
+        React.createElement('ul', {},
+          React.createElement('li', {},
+            React.createElement('h2', {}, "James Nelson"),
+            React.createElement('a', {href: 'mailto:pan.ma@ucloud.cn'}, "pan.ma@ucloud.cn")
+          ),
+          React.createElement('li', {},
+            React.createElement('h2', {}, "James Nelson"),
+            React.createElement('a', {href: 'mailto:pan.ma@ucloud.cn'}, "pan.ma@ucloud.cn")
+          ),
+        )
+      )
+      ReactDOM.render(rootElement, document.getElementById('react-app'))
+    </script>
+  </body>
+</html>
