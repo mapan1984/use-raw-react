@@ -9,7 +9,6 @@
 
 import React from "./react.development.js";
 
-let ReactDOM = {};
 
 var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED; // Prevent newer renderers from RTE when used with older react package versions.
 // Current owner and dispatcher used to share the same ref,
@@ -27281,6 +27280,8 @@ var foundDevTools = injectIntoDevTools({
         }
     }
 }
+
+let ReactDOM = {};
 
 ReactDOM.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = Internals;
 ReactDOM.createPortal = createPortal$1;
